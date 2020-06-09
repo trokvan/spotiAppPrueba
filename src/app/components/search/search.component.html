@@ -9,7 +9,8 @@
 </div>
 <div class="card-columns mt-3">
     <div class="card" *ngFor="let artista of artistas">
-        <img [src]="artista.images[0].url" class="card-img-top">
+        <!-- noimagn es el pipe creado-->
+        <img [src]="artista.images | noimagen" class="card-img-top">
         <div class="card-body">
             <h5 class="card-title">{{artista.name}}</h5>
         </div>

@@ -5,7 +5,8 @@
 <h1>NUEVOS LANZAMIENTOS</h1>
 <div class="card-columns">
     <div *ngFor="let lanzamiento of nuevosLanzamientos" class="card">
-      <img [src]="lanzamiento.images[0].url" class="card-img-top" alt="...">
+      <!-- noimagn es el pipe creado-->
+      <img [src]="lanzamiento.images | noimagen" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">{{lanzamiento.name}}</h5>
         <p class="card-text">
