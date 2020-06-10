@@ -14,6 +14,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 
 //Pipes
 import { NoimagenPipe } from './pipes/noimagen.pipe';
+import { TarjetaComponent } from './components/tarjeta/tarjeta.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +23,7 @@ import { NoimagenPipe } from './pipes/noimagen.pipe';
     ArtistaComponent,
     NavbarComponent,
     NoimagenPipe,
+    TarjetaComponent,
   ],
   imports: [
     BrowserModule,

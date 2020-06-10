@@ -3,16 +3,4 @@
     <li *ngFor="let pais of paises">{{pais.name}}</li>
 </ul> -->
 <h1>NUEVOS LANZAMIENTOS</h1>
-<div class="card-columns">
-    <div *ngFor="let lanzamiento of nuevosLanzamientos" class="card">
-      <!-- noimagn es el pipe creado-->
-      <img [src]="lanzamiento.images | noimagen" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">{{lanzamiento.name}}</h5>
-        <p class="card-text">
-            <span *ngFor="let artista of lanzamiento.artists" class="badge badge-pill badge-primary">{{artista.name}}</span>
-        </p>
-        <p class="card-text"><small class="text-muted">{{lanzamiento.release_date}}</small></p>
-      </div>
-    </div>
-</div>
+<app-tarjeta [elementos]="nuevosLanzamientos"></app-tarjeta>

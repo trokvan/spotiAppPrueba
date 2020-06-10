@@ -7,14 +7,6 @@
         <button class="btn btn-primary" (click)="buscarArtista(termino.value)">Buscar</button>
     </div>
 </div>
-<div class="card-columns mt-3">
-    <div class="card" *ngFor="let artista of artistas">
-        <!-- noimagn es el pipe creado-->
-        <img [src]="artista.images | noimagen" class="card-img-top">
-        <div class="card-body">
-            <h5 class="card-title">{{artista.name}}</h5>
-        </div>
-    </div>
-</div>
+<app-tarjeta [elementos]="artistas"></app-tarjeta>
 
 
