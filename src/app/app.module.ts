@@ -15,6 +15,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 //Pipes
 import { NoimagenPipe } from './pipes/noimagen.pipe';
 import { TarjetaComponent } from './components/tarjeta/tarjeta.component';
+import { IndicadorCargaComponent } from './components/indicador-carga/indicador-carga.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +25,7 @@ import { TarjetaComponent } from './components/tarjeta/tarjeta.component';
     NavbarComponent,
     NoimagenPipe,
     TarjetaComponent,
+    IndicadorCargaComponent,
   ],
   imports: [
     BrowserModule,

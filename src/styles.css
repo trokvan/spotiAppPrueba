@@ -9,6 +9,9 @@ hr {
     border-color: white;
 }
 
+h1{
+    text-align: center;
+}
 .puntero {
     cursor: pointer;
 }

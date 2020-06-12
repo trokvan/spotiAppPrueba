@@ -7,6 +7,7 @@
         <button class="btn btn-primary" (click)="buscarArtista(termino.value)">Buscar</button>
     </div>
 </div>
+<app-indicador-carga *ngIf="animacion"></app-indicador-carga>
 <app-tarjeta [elementos]="artistas"></app-tarjeta>
 
 

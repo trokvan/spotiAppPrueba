@@ -18,10 +18,14 @@ export class HomeComponent{
   //     });
   // }
   public nuevosLanzamientos:any[]=[];
+  public animacion:boolean=true;
   
   constructor(private _spotiService:SpotifyService){
     this._spotiService.getNuevosLanzamientos()
-    .subscribe(resultados=>this.nuevosLanzamientos=resultados);
+    .subscribe(resultados=>{
+      this.animacion=false;
+      return this.nuevosLanzamientos=resultados}
+    );
   }
 
 }
