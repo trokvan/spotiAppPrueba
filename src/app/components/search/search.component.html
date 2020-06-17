@@ -8,6 +8,6 @@
     </div>
 </div>
 <app-indicador-carga *ngIf="animacion"></app-indicador-carga>
-<app-tarjeta [elementos]="artistas"></app-tarjeta>
+<app-tarjeta [elementos]="artistas" *ngIf="!animacion"></app-tarjeta>
 
 

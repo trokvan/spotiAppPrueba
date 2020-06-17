@@ -1,8 +1,8 @@
 
 /*Animación de carga por @tobiasahlin*/
 .sk-chase {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     position: relative;
     animation: sk-chase 2.5s infinite linear both;
     margin: 20px auto;

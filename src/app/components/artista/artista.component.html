@@ -1,1 +1,15 @@
-<p>artista works!</p>
+<app-indicador-carga *ngIf="animacion"></app-indicador-carga>
+<div class="row animated fadeIn" *ngIf="!animacion">
+    <div class="col-md-4 col-sm-12">
+        <img [src]="infoArtista.images | noimagen" alt="Portada artista" class="img-fluid">
+    </div>
+    <div class="col-md-8 col-sm-12">
+        <h2>{{infoArtista.name}}</h2>
+        <strong>Géneros: </strong>
+        <ul>
+            <li *ngFor="let item of infoArtista.genres">{{item}}</li>
+        </ul>
+        <label><strong>Seguidores: </strong>{{infoArtista['followers'].total | number}}</label><br>
+        <a [href]="infoArtista['external_urls'].spotify" target="_blank">{{infoArtista['external_urls'].spotify}}</a>
+    </div>
+</div>

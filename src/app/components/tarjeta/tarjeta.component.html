@@ -1,5 +1,5 @@
 <div class="card-columns mt-3">
-    <div *ngFor="let elemento of elementos" class="card">
+    <div *ngFor="let elemento of elementos" class="card animated fadeIn puntero" (click)="verArtista(elemento)" >
       <!-- noimagn es el pipe creado-->
       <img [src]="elemento.images | noimagen" class="card-img-top" alt="...">
       <div class="card-body">
